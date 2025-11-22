@@ -74,7 +74,7 @@ object FixRtm {
             FMLCommonHandler.instance().registerCrashCallable(RTMSmallModelPackInfoCrashCallable)
         if (MainConfig.useThreadLocalProperties)
             System.setProperties(ThreadLocalProperties().apply { putAll(System.getProperties()) })
-        Launch.classLoader.addClassLoaderExclusion("jdk.nashorn.")
+        Launch.classLoader.addClassLoaderExclusion("org.openjdk.nashorn.")
         when (MainConfig.scriptingMode) {
             MainConfig.ScriptingMode.CacheWithSai -> {
                 loadFIXScriptUtil()// init
