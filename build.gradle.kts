@@ -52,6 +52,7 @@ dependencies {
     shade("com.anatawa12.sai:sai:0.0.2")
     shade("org.jetbrains:annotations:24.0.1")
     shade("org.sejda.imageio:webp-imageio:0.1.6")
+    shade("org.openjdk.nashorn:nashorn-core:15.7")
 
     compileOnly(files(file("run/fixrtm-cache/script-compiled-class")))
 //    compileOnly(files(projectDir.resolve("mods/rtm.deobf.jar"),
